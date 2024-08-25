@@ -1,0 +1,59 @@
+#wrapper{display:grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:"nav nav"
+                             "header header"
+                             "nestedgrid nestedgrid"
+                             "images images"
+                             "footer footer";
+          background-color:rgb(255,243,237);}
+
+#nav{grid-area:nav;
+     background-color:rgb(255,225,214);}
+#header{grid-area:header;
+        font-size:30px;
+        text-align:center;
+        margin-top:20px}
+
+#nestedgrid{grid-area:nestedgrid;
+            font-size:20px;
+            grid-template-areas:"food clothing events"}
+#food{grid-area:food}
+#clothing{grid-area:clothing;
+          text-align:left;}
+#events{grid-area:events}
+
+#images{grid-area:images;}
+img{width:14%;
+    height:25%;
+    padding-left:25px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-top:10px;}
+
+#footer{grid-area:footer;
+        background-color:rgb(255,225,214);
+        padding:15px;}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: pink;}

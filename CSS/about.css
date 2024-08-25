@@ -1,0 +1,62 @@
+#wrapper{display:grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas: "nav nav"
+                              "header header"
+                              "nestedgrid1 side"
+                              "nestedgrid1 side"  
+                              "footer footer";
+        background-color:rgb(255,243,237);}
+#nav{grid-area:nav;
+    background-color:rgb(255,225,214);}
+        
+#header{grid-area:header;
+        font-size: 30px;
+        text-align:center;
+        margin-top:20px;}
+#nestedgrid1{grid-area:nestedgrid1;
+            background-color:lightpink;
+            text-align:center;
+            background-color:rgb(255,230,237);
+            font-size:20px;
+            margin-left:40x;
+            margin-top:40px;}
+
+text{margin-top:20px;}
+
+#side{grid-area:side;}
+#footer{grid-area:footer;
+        background-color:rgb(255,225,214);
+        padding:15px;}
+
+body{background-color:;}
+img{width:35%;
+    height:15%;
+    padding-left:25px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-top:20px;}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: pink;}
